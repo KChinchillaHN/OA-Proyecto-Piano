@@ -1,0 +1,31 @@
+NET "clock" LOC="B8";
+
+//Boton Reset 
+Net "reset" LOC="C13" | IOSTANDARD = LVCMOS33;
+
+// teclas J1
+Net "teclas[0]" LOC ="C15" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "teclas[1]" LOC ="F13" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "teclas[2]" LOC ="F14" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "teclas[3]" LOC ="G13" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "teclas[4]" LOC ="F12" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "teclas[5]" LOC ="D14" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+
+//Sonido J2
+Net "sound4[0]" LOC ="H14" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "sound4[1]" LOC ="J13" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "sound4[2]" LOC ="K13" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "sound4[3]" LOC ="H11" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "sound4[4]" LOC ="H12" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "sound4[5]" LOC ="J14" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+
+// RBG J3
+Net "RGB[0]" LOC ="D15" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "RGB[1]" LOC ="G16" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+Net "RGB[2]" LOC ="J16" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+
+// Vsync 
+Net "V_sync" LOC ="K15" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
+
+// Hsync
+Net "H_sync" LOC ="C16" | IOSTANDARD = LVCMOS33 | SLEW = FAST | DRIVE = 8;
